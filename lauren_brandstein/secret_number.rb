@@ -43,6 +43,7 @@
     # @TODO: Make this a random integer.
     secret_num = 7
     guesses_left = 3
+    guess_str = "guesses"
     
     while guesses_left > 0 do
 
@@ -53,6 +54,7 @@
 
       # Decrement the counter for guesses remaining  
       guesses_left -= 1
+      if guesses_left == 1 then guess_str = "guess" end
 
       # @TODO: Put all this evaluation stuff in an if/elseif or switch case or something?
 
@@ -74,8 +76,8 @@
         #     - Don't forget to let your players know how many guesses they have left.
         #       Your game should say something like:
         #         "You have X guesses before the game is over enter a another number"
-        # @TODO: Make this singular "guess" if guesses_left is 1.
-        puts "GAME MASTER: You have #{guesses_left} guesses left.\n\nGuess another number!\n\n"
+        # Make this singular "guess" if guesses_left is 1.
+        puts "GAME MASTER: You have #{guesses_left} #{guess_str} left.\n\nGuess another number!\n\n"
 
       end
 
