@@ -34,8 +34,8 @@
     #   - Any good game will communicate the rules. Let the player know they must
     #     guess a number between 1 and 10 and that they only have 3 tries to do so.
     puts "GAME MASTER: Here are the rules: Guess any number between 1 and 10. You have 3 guesses.\n\n"
-    puts "Guess correctly, and bask in the warm glow of victory.\n\nnGuess wrong three times, and a baby unicorn will die for your failure!\n\n"
-    puts "MWAAAHAAAHAAAHAAAHAAAAAAA!!!1!\n\n"
+    puts "Guess correctly, and bask in the warm glow of victory.\n\nGuess wrong three times, and a baby unicorn will die for your failure!\n\n"
+    puts "MWAAAHAAAHAAAHAAAHAAAAAAA!!1!!!!\n\n"
 
     #   Functionality:
     #     - Manually specify the secret number in a variable. Choose a random 
@@ -84,7 +84,8 @@
         #     - If they don't guess correctly after 3 tries, display that the player
         #       lost and that the game is over. Be nice and let them know what the
         #       `secret_number` was.
-        puts "\nGAME MASTER: It seems that you are out of guesses, #{player_name}.\n\nI'll be sacrificing that baby unicorn now.\n\nBut don't feel bad, you've just given me a little more life force!\n\n"
+        puts "\nGAME MASTER: It seems that you are out of guesses, #{player_name}.\n\nThe secret number was #{secret_num}.\n\n"
+        puts "I'll be sacrificing that baby unicorn now.\n\nBut don't feel bad, you've just given me a little more life force!\n\n"
 
       end
 
